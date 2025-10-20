@@ -1,1 +1,52 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a;
+	cin >> a;
+	if (a / 10000== a % 10)
+	{
+		if (a /1000%10  == a % 100 / 10)
+			cout << "It is a 5-digit palindrome.";
+		else
+			cout << "It is not a 5-digit palindrome.";
+	}
+	else
+	cout << "It is not a 5-digit palindrome.";
 
+
+
+}
+
+
+
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a;
+    cin >> a;
+
+    
+    if (a < 10000 || a > 99999)
+    {
+        cout << "It is not a 5-digit palindrome.";
+        return 0;
+    }
+
+   
+    if (a / 10000 == a % 10 && a / 1000 % 10 == a % 100 / 10)
+    {
+        cout << "It is a 5-digit palindrome.";
+    }
+    else
+    {
+        cout << "It is not a 5-digit palindrome.";
+    }
+
+    return 0;
+}
+*/
