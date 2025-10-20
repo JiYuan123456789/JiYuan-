@@ -1,0 +1,22 @@
+#include <iostream>;
+using namespace std;
+int main()
+{
+	int counter=1;
+	int largest,b;
+	cin >> b;
+	largest = b;
+
+	while (counter < 10)
+	{
+		int a;
+		cin >> a;
+		counter++;
+		if (a > largest)
+			largest = a;	
+	}
+	cout << largest;
+
+
+
+}
