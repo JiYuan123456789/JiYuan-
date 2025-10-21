@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int side1, side2, hypotenuse,a,b,c;
+	a == side1;
+	b == side2;
+	c == hypotenuse;
+	for (a = 1, b = 1, c = 1; a*a + b * b == c * c || a * a == b * b + c * c || a * a + c * c == b * b;a++)
+		for(;a<=500;b++)
+			for(;b<500;c++){}
+		cout << a <<" "<< b<<" " << c << endl;
+
+
+}
