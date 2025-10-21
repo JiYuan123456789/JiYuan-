@@ -1,1 +1,35 @@
 
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+    double x = 0, y = 0;
+    unsigned int m = 0;
+    cin >> x >> m;
+
+    for (unsigned int n = 0; n <= m; n++)
+    {
+        double e = 1.0; 
+        double f = 1.0; 
+
+       
+        for (unsigned int c = 1; c <= n; c++)
+        {
+            e = e * x;
+        }
+
+        
+        for (unsigned int d = 1; d <= n; d++)
+        {
+            f = f * d;
+        }
+
+        
+        y = y + e / f;
+    }
+
+    cout << fixed << setprecision(2) << y;
+    return 0;
+}
