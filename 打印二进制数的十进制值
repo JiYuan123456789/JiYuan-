@@ -2,34 +2,23 @@
 using namespace std;
 int main()
 {
-	int a,c=0;
+	int a,b,c,d=1,f=0;
 	cin >> a;
 	if (a == 0)
 		cout << a;
 	else
+	{;
+	while (a > 0)
 	{
-		
-		int c,d=0,e,f=1,g=0;
-		c = a % 10;
-		c = c / 10;
-		e++;
-		while (d < e)
-		{
-			d++;
-			f = 2 * f;
-			g = g + f;
-
-		}
-
-
-
-
-
-
-
-
+		b = a % 10;
+		c = b * d;
+		d = 2 * d;
+		a = a / 10;
+		f = f + c;
 	}
-	
+	cout << f;
+	}
+
 
 
 
