@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int m,n,b,c=2,first,second;
+	cin >>m >>n;
+	if(m>n)
+		{
+		first = m;
+		second = n;
+	}
+	else
+	{
+		first = n;
+		second = m;
+	}
+	while(c<10)
+	{
+		c++;
+		cin >> b;
+		if (b > first)
+		{
+			
+			second = first;
+			first = b;
+		}
+		else
+		{
+			if (b<first && b>second)
+				second = b;
+		}
+		
+
+	}
+	cout << first<<" " << second;
+}
