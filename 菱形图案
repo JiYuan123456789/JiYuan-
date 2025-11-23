@@ -1,0 +1,35 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a;
+	cin >> a;
+	if (a % 2 == 1 && a >= 1 && a <= 19)
+	{
+		for (int b = 1; b <= a; b++)
+		{
+			if (b <= (a + 1) / 2)
+			{
+				for (int c = 1; c <= (a + 1) / 2 - b; c++)
+					cout << " ";
+				for (int d = 1; d <= 2 * b - 1 ; d++)
+					cout << "*";
+				cout << endl;
+			}
+			else
+			{
+				for (int c = 1; c <=b- (a + 1) / 2 ; c++)
+					cout << " ";
+				for (int d = 1; d <=(a-b+1)*2-1; d++)
+					cout << "*";
+				cout << endl;
+			}
+
+
+
+		}
+	}
+	else
+		cout << "the number is wrong";
+
+}
