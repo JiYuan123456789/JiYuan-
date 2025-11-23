@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+using namespace std;
+int filp()
+{
+    srand(time(0));
+    int acount=0,bcount=0;
+    int finalface=0;
+    for(int count = 0; count < 100; count++)
+   { 
+    int face = rand() % 2;
+    if(face == 0)
+    {
+        acount++;
+        cout<<"Head"<<endl;
+    }
+    else
+    {
+        bcount++;
+        cout<<"Tail"<<endl;
+    }
+    cout<<"Head:"<<acount<<endl;
+    cout<<"Tail:"<<bcount<<endl;
+    finalface = face; 
+   }
+    return finalface;
+
+}
+
+int main()
+{
+    filp();
+    return 0;
+}
