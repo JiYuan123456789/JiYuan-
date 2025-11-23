@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+void fun(int side, char fillCharacter)
+{
+    for (int a = 0; a < side; a++)
+    {
+        for (int b = 0; b < side; b++)
+        {
+            cout << fillCharacter << " ";
+        }
+        cout << endl;
+    }
+}
+int main()
+{
+    cout << "please print" << endl;
+    int side;
+    cin >> side;
+    char fillCharacter;
+    cin>>fillCharacter;
+    fun(side, fillCharacter);
+    return 0;
+}
