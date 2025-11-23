@@ -1,0 +1,81 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    // 循环 12 天
+    for (int day = 1; day <= 12; day++) {
+        cout << "On the ";
+        // 第一个 switch 语句：处理天数的英文表达（first、second 等）
+        switch (day) {
+            case 1:
+                cout << "first";
+                break;
+            case 2:
+                cout << "second";
+                break;
+            case 3:
+                cout << "third";
+                break;
+            case 4:
+                cout << "fourth";
+                break;
+            case 5:
+                cout << "fifth";
+                break;
+            case 6:
+                cout << "sixth";
+                break;
+            case 7:
+                cout << "seventh";
+                break;
+            case 8:
+                cout << "eighth";
+                break;
+            case 9:
+                cout << "ninth";
+                break;
+            case 10:
+                cout << "tenth";
+                break;
+            case 11:
+                cout << "eleventh";
+                break;
+            case 12:
+                cout << "twelfth";
+                break;
+        }
+        cout << " day of Christmas my true love sent to me:" << endl;
+
+        // 第二个 switch 语句：处理对应天数的歌词内容
+        switch (day) {
+            case 12:
+                cout << "Twelve drummers drumming," << endl;
+            case 11:
+                cout << "Eleven pipers piping," << endl;
+            case 10:
+                cout << "Ten lords a-leaping," << endl;
+            case 9:
+                cout << "Nine ladies dancing," << endl;
+            case 8:
+                cout << "Eight maids a-milking," << endl;
+            case 7:
+                cout << "Seven swans a-swimming," << endl;
+            case 6:
+                cout << "Six geese a-laying," << endl;
+            case 5:
+                cout << "Five golden rings," << endl;
+            case 4:
+                cout << "Four calling birds," << endl;
+            case 3:
+                cout << "Three French hens," << endl;
+            case 2:
+                cout << "Two turtle doves, and" << endl;
+            case 1:
+                cout << "A partridge in a pear tree." << endl;
+                break;
+        }
+        cout << endl;
+    }
+    return 0;
+}
