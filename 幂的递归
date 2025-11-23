@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int power(int base,int exponent)
+{
+    int result=1;
+    cin>>base>>exponent;
+    for(;exponent>1;exponent--)
+    {
+        result*=base;
+    }
+cout<<result;
+}
+int main()
+{
+   int base,exponent;
+   power(base,exponent);
+}
